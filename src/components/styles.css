@@ -13,21 +13,12 @@
 }
 
 body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
   background-color: #eeeaea;
 }
 
-a {
-  text-decoration: none;
-}
-
 .quote-box {
-  position: absolute;
   border-radius: 0.4rem;
-  box-shadow: 0.5rem 0.5rem 0.6rem black;
+  box-shadow: 0.5rem 0.5rem 0.6rem rgb(27, 27, 27);
   background-color: whitesmoke;
   min-width: 50rem;
   display: table;
@@ -43,7 +34,7 @@ p {
 }
 footer {
   margin-top: 2rem;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   text-align: right;
   width: 50rem;
 }
@@ -64,10 +55,24 @@ button {
 }
 
 .icon {
-  display: block;
+  margin-top: 20px;
   float: left;
+  display: flex;
+  justify-content: space-between;
 }
 .color-random {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-width: 130rem;
-  min-height: 55rem;
+  min-height: 65rem;
+}
+
+@media only screen and (min-width: 450px) {
+  p {
+    font-size: 22px;
+  }
+  .quote-box {
+    width: 570px;
+  }
 }
