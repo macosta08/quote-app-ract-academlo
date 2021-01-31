@@ -3,7 +3,7 @@ import React from 'react'
 export const IconTwitter = ({quote, author, color}) => {
 	return (
 		<a className="twitter-timeline" 
-			href={`https://twitter.com/intent/tweet?hashtags=quotes&related=academlo&text=${quote} ${author}`}
+			href={`https://twitter.com/intent/tweet?hashtags=quotes&related=academlo&text="${quote}" ${author}`}
 			target='_blank' rel="noreferrer"> 
 			<svg xmlns="http://www.w3.org/2000/svg" 
 			style={{ color: color }} width="40" height="40" fill="currentColor" 
