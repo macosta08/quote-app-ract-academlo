@@ -4,7 +4,7 @@ import dataQuotes from '../quotes.json'
 import { Button } from './Button';
 import { IconTwitter } from './IconTwitter';
 import './styles.css'
-export const MessageCards = () => {
+export const QuoteBox = () => {
 	const [quoteIndex, setQuoteIndex] = useState(0);
 	
 	const setQuoteIndexRandom = () => {
@@ -16,7 +16,7 @@ export const MessageCards = () => {
 	return (
 		<div className='color-random' style={{ background: color }}>
 			<div className='quote-box'>
-				<p style={{ color: color }}>{quote}</p>
+				<p style={{ color: color }}><i className="fa fa-quote-left"/> {quote}</p>
 				<footer style={{ color: color }}>{author}</footer>
 				<div>
 					<span className='icon'>

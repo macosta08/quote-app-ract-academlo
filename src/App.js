@@ -1,11 +1,11 @@
 import React from "react";
 import "./App.css";
-import { MessageCards } from "./components/MessageCards";
+import { QuoteBox } from "./components/QuoteBox";
 
 function App() {
   return (
     <>
-      <MessageCards />
+      <QuoteBox />
     </>
   );
 }
