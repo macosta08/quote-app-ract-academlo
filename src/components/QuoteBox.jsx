@@ -14,7 +14,7 @@ export const QuoteBox = () => {
 	const {quote, author} = dataQuotes.quotes[quoteIndex];
 	const color = colorRGB();
 	return (
-		<div className='color-random' style={{ background: color }}>
+		<div className='background-color-random' style={{ background: color }}>
 			<div className='quote-box'>
 				<p style={{ color: color }}><i className="fa fa-quote-left"/> {quote}</p>
 				<footer style={{ color: color }}>{author}</footer>
