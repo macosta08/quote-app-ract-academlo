@@ -8,7 +8,7 @@ export const QuoteBox = () => {
 	const [quoteIndex, setQuoteIndex] = useState(0);
 	
 	const setQuoteIndexRandom = () => {
-		setQuoteIndex(Math.floor(Math.random() * 102));
+		setQuoteIndex(Math.floor(Math.random() * dataQuotes.quotes.length));
 	}
 
 	const {quote, author} = dataQuotes.quotes[quoteIndex];
