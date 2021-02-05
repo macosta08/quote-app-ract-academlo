@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { colorRGB } from '../helpers/CorlorRandom';
+import { colorRGB, getRandomNumber } from '../helpers/CorlorRandom';
 import dataQuotes from '../quotes.json'
 import { Button } from './Button';
 import { IconTwitter } from './IconTwitter';
@@ -8,7 +8,7 @@ export const QuoteBox = () => {
 	const [quoteIndex, setQuoteIndex] = useState(0);
 	
 	const setQuoteIndexRandom = () => {
-		setQuoteIndex(Math.floor(Math.random() * dataQuotes.quotes.length));
+		setQuoteIndex(getRandomNumber(dataQuotes.quotes.length));
 	}
 
 	const {quote, author} = dataQuotes.quotes[quoteIndex];
@@ -26,5 +26,5 @@ export const QuoteBox = () => {
 				</div>
 			</div>
 		</div>
-	)
+	);
 }

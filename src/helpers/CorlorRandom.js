@@ -1,5 +1,5 @@
 export function getRandomNumber(num) {
-  return (Math.random() * num).toFixed(0);
+  return Math.floor(Math.random() * num);
 }
 
 export function colorRGB() {
